@@ -13,26 +13,13 @@
 		8C6D58A71E3095F700A7CE6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6D58A51E3095F700A7CE6E /* Main.storyboard */; };
 		8C6D58A91E3095F800A7CE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6D58A81E3095F800A7CE6E /* Assets.xcassets */; };
 		8C6D58AC1E3095F800A7CE6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6D58AA1E3095F800A7CE6E /* LaunchScreen.storyboard */; };
-		8C6D58B71E3095F800A7CE6E /* HQPresentViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D58B61E3095F800A7CE6E /* HQPresentViewTests.m */; };
-		8C6D58C21E3095F900A7CE6E /* HQPresentViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D58C11E3095F900A7CE6E /* HQPresentViewUITests.m */; };
+		8C6D58D11E3096C700A7CE6E /* NextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D58D01E3096C700A7CE6E /* NextController.m */; };
+		8C6D58D51E3097ED00A7CE6E /* HQTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D58D41E3097ED00A7CE6E /* HQTransitioningDelegate.m */; };
+		8C6D58D81E30995200A7CE6E /* HQPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D58D71E30995200A7CE6E /* HQPresentationController.m */; };
+		8C6D58DB1E309A1F00A7CE6E /* HQAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D58DA1E309A1F00A7CE6E /* HQAnimationManager.m */; };
+		8C6D58E31E30BD3700A7CE6E /* HQPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D58E21E30BD3700A7CE6E /* HQPManager.m */; };
+		8CC74A4C1E31A8BC001EE1AB /* XIBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC74A4B1E31A8BC001EE1AB /* XIBController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8C6D58B31E3095F800A7CE6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C6D58911E3095F700A7CE6E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8C6D58981E3095F700A7CE6E;
-			remoteInfo = HQPresentView;
-		};
-		8C6D58BE1E3095F900A7CE6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C6D58911E3095F700A7CE6E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8C6D58981E3095F700A7CE6E;
-			remoteInfo = HQPresentView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8C6D58991E3095F700A7CE6E /* HQPresentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQPresentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,30 +32,23 @@
 		8C6D58A81E3095F800A7CE6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C6D58AB1E3095F800A7CE6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C6D58AD1E3095F800A7CE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C6D58B21E3095F800A7CE6E /* HQPresentViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HQPresentViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C6D58B61E3095F800A7CE6E /* HQPresentViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQPresentViewTests.m; sourceTree = "<group>"; };
-		8C6D58B81E3095F800A7CE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C6D58BD1E3095F900A7CE6E /* HQPresentViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HQPresentViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C6D58C11E3095F900A7CE6E /* HQPresentViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQPresentViewUITests.m; sourceTree = "<group>"; };
-		8C6D58C31E3095F900A7CE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6D58CF1E3096C700A7CE6E /* NextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextController.h; sourceTree = "<group>"; };
+		8C6D58D01E3096C700A7CE6E /* NextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextController.m; sourceTree = "<group>"; };
+		8C6D58D31E3097ED00A7CE6E /* HQTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTransitioningDelegate.h; sourceTree = "<group>"; };
+		8C6D58D41E3097ED00A7CE6E /* HQTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTransitioningDelegate.m; sourceTree = "<group>"; };
+		8C6D58D61E30995200A7CE6E /* HQPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQPresentationController.h; sourceTree = "<group>"; };
+		8C6D58D71E30995200A7CE6E /* HQPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQPresentationController.m; sourceTree = "<group>"; };
+		8C6D58D91E309A1F00A7CE6E /* HQAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQAnimationManager.h; sourceTree = "<group>"; };
+		8C6D58DA1E309A1F00A7CE6E /* HQAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQAnimationManager.m; sourceTree = "<group>"; };
+		8C6D58DC1E30A11900A7CE6E /* HQPresentedViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQPresentedViewDelegate.h; sourceTree = "<group>"; };
+		8C6D58E11E30BD3700A7CE6E /* HQPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQPManager.h; sourceTree = "<group>"; };
+		8C6D58E21E30BD3700A7CE6E /* HQPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQPManager.m; sourceTree = "<group>"; };
+		8CC74A4A1E31A8BC001EE1AB /* XIBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIBController.h; sourceTree = "<group>"; };
+		8CC74A4B1E31A8BC001EE1AB /* XIBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIBController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8C6D58961E3095F700A7CE6E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C6D58AF1E3095F800A7CE6E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C6D58BA1E3095F900A7CE6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,9 +61,8 @@
 		8C6D58901E3095F700A7CE6E = {
 			isa = PBXGroup;
 			children = (
+				8C6D58D21E3097A400A7CE6E /* HQPresentViewLib */,
 				8C6D589B1E3095F700A7CE6E /* HQPresentView */,
-				8C6D58B51E3095F800A7CE6E /* HQPresentViewTests */,
-				8C6D58C01E3095F900A7CE6E /* HQPresentViewUITests */,
 				8C6D589A1E3095F700A7CE6E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				8C6D58991E3095F700A7CE6E /* HQPresentView.app */,
-				8C6D58B21E3095F800A7CE6E /* HQPresentViewTests.xctest */,
-				8C6D58BD1E3095F900A7CE6E /* HQPresentViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +82,10 @@
 				8C6D58A01E3095F700A7CE6E /* AppDelegate.m */,
 				8C6D58A21E3095F700A7CE6E /* ViewController.h */,
 				8C6D58A31E3095F700A7CE6E /* ViewController.m */,
+				8C6D58CF1E3096C700A7CE6E /* NextController.h */,
+				8C6D58D01E3096C700A7CE6E /* NextController.m */,
+				8CC74A4A1E31A8BC001EE1AB /* XIBController.h */,
+				8CC74A4B1E31A8BC001EE1AB /* XIBController.m */,
 				8C6D58A51E3095F700A7CE6E /* Main.storyboard */,
 				8C6D58A81E3095F800A7CE6E /* Assets.xcassets */,
 				8C6D58AA1E3095F800A7CE6E /* LaunchScreen.storyboard */,
@@ -122,22 +103,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8C6D58B51E3095F800A7CE6E /* HQPresentViewTests */ = {
+		8C6D58D21E3097A400A7CE6E /* HQPresentViewLib */ = {
 			isa = PBXGroup;
 			children = (
-				8C6D58B61E3095F800A7CE6E /* HQPresentViewTests.m */,
-				8C6D58B81E3095F800A7CE6E /* Info.plist */,
+				8C6D58D31E3097ED00A7CE6E /* HQTransitioningDelegate.h */,
+				8C6D58D41E3097ED00A7CE6E /* HQTransitioningDelegate.m */,
+				8C6D58D61E30995200A7CE6E /* HQPresentationController.h */,
+				8C6D58D71E30995200A7CE6E /* HQPresentationController.m */,
+				8C6D58D91E309A1F00A7CE6E /* HQAnimationManager.h */,
+				8C6D58DA1E309A1F00A7CE6E /* HQAnimationManager.m */,
+				8C6D58DC1E30A11900A7CE6E /* HQPresentedViewDelegate.h */,
+				8C6D58E11E30BD3700A7CE6E /* HQPManager.h */,
+				8C6D58E21E30BD3700A7CE6E /* HQPManager.m */,
 			);
-			path = HQPresentViewTests;
-			sourceTree = "<group>";
-		};
-		8C6D58C01E3095F900A7CE6E /* HQPresentViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8C6D58C11E3095F900A7CE6E /* HQPresentViewUITests.m */,
-				8C6D58C31E3095F900A7CE6E /* Info.plist */,
-			);
-			path = HQPresentViewUITests;
+			path = HQPresentViewLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,64 +139,19 @@
 			productReference = 8C6D58991E3095F700A7CE6E /* HQPresentView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8C6D58B11E3095F800A7CE6E /* HQPresentViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8C6D58C91E3095F900A7CE6E /* Build configuration list for PBXNativeTarget "HQPresentViewTests" */;
-			buildPhases = (
-				8C6D58AE1E3095F800A7CE6E /* Sources */,
-				8C6D58AF1E3095F800A7CE6E /* Frameworks */,
-				8C6D58B01E3095F800A7CE6E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8C6D58B41E3095F800A7CE6E /* PBXTargetDependency */,
-			);
-			name = HQPresentViewTests;
-			productName = HQPresentViewTests;
-			productReference = 8C6D58B21E3095F800A7CE6E /* HQPresentViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8C6D58BC1E3095F900A7CE6E /* HQPresentViewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8C6D58CC1E3095F900A7CE6E /* Build configuration list for PBXNativeTarget "HQPresentViewUITests" */;
-			buildPhases = (
-				8C6D58B91E3095F900A7CE6E /* Sources */,
-				8C6D58BA1E3095F900A7CE6E /* Frameworks */,
-				8C6D58BB1E3095F900A7CE6E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8C6D58BF1E3095F900A7CE6E /* PBXTargetDependency */,
-			);
-			name = HQPresentViewUITests;
-			productName = HQPresentViewUITests;
-			productReference = 8C6D58BD1E3095F900A7CE6E /* HQPresentViewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8C6D58911E3095F700A7CE6E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HQ;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = huangqiang;
 				TargetAttributes = {
 					8C6D58981E3095F700A7CE6E = {
 						CreatedOnToolsVersion = 8.2;
 						ProvisioningStyle = Automatic;
-					};
-					8C6D58B11E3095F800A7CE6E = {
-						CreatedOnToolsVersion = 8.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 8C6D58981E3095F700A7CE6E;
-					};
-					8C6D58BC1E3095F900A7CE6E = {
-						CreatedOnToolsVersion = 8.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 8C6D58981E3095F700A7CE6E;
 					};
 				};
 			};
@@ -235,8 +169,6 @@
 			projectRoot = "";
 			targets = (
 				8C6D58981E3095F700A7CE6E /* HQPresentView */,
-				8C6D58B11E3095F800A7CE6E /* HQPresentViewTests */,
-				8C6D58BC1E3095F900A7CE6E /* HQPresentViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,20 +184,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C6D58B01E3095F800A7CE6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C6D58BB1E3095F900A7CE6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -275,40 +193,17 @@
 			files = (
 				8C6D58A41E3095F700A7CE6E /* ViewController.m in Sources */,
 				8C6D58A11E3095F700A7CE6E /* AppDelegate.m in Sources */,
+				8C6D58D81E30995200A7CE6E /* HQPresentationController.m in Sources */,
+				8C6D58E31E30BD3700A7CE6E /* HQPManager.m in Sources */,
+				8CC74A4C1E31A8BC001EE1AB /* XIBController.m in Sources */,
+				8C6D58D11E3096C700A7CE6E /* NextController.m in Sources */,
 				8C6D589E1E3095F700A7CE6E /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C6D58AE1E3095F800A7CE6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C6D58B71E3095F800A7CE6E /* HQPresentViewTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C6D58B91E3095F900A7CE6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C6D58C21E3095F900A7CE6E /* HQPresentViewUITests.m in Sources */,
+				8C6D58D51E3097ED00A7CE6E /* HQTransitioningDelegate.m in Sources */,
+				8C6D58DB1E309A1F00A7CE6E /* HQAnimationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8C6D58B41E3095F800A7CE6E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8C6D58981E3095F700A7CE6E /* HQPresentView */;
-			targetProxy = 8C6D58B31E3095F800A7CE6E /* PBXContainerItemProxy */;
-		};
-		8C6D58BF1E3095F900A7CE6E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8C6D58981E3095F700A7CE6E /* HQPresentView */;
-			targetProxy = 8C6D58BE1E3095F900A7CE6E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8C6D58A51E3095F700A7CE6E /* Main.storyboard */ = {
@@ -423,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HQPresentView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sendtou.HQPresentView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,55 +330,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HQPresentView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sendtou.HQPresentView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		8C6D58CA1E3095F900A7CE6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HQPresentViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendtou.HQPresentViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HQPresentView.app/HQPresentView";
-			};
-			name = Debug;
-		};
-		8C6D58CB1E3095F900A7CE6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HQPresentViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendtou.HQPresentViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HQPresentView.app/HQPresentView";
-			};
-			name = Release;
-		};
-		8C6D58CD1E3095F900A7CE6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = HQPresentViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendtou.HQPresentViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = HQPresentView;
-			};
-			name = Debug;
-		};
-		8C6D58CE1E3095F900A7CE6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = HQPresentViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendtou.HQPresentViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = HQPresentView;
 			};
 			name = Release;
 		};
@@ -505,22 +356,7 @@
 				8C6D58C81E3095F900A7CE6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		8C6D58C91E3095F900A7CE6E /* Build configuration list for PBXNativeTarget "HQPresentViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C6D58CA1E3095F900A7CE6E /* Debug */,
-				8C6D58CB1E3095F900A7CE6E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		8C6D58CC1E3095F900A7CE6E /* Build configuration list for PBXNativeTarget "HQPresentViewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C6D58CD1E3095F900A7CE6E /* Debug */,
-				8C6D58CE1E3095F900A7CE6E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
