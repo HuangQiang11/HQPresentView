@@ -1,7 +1,9 @@
 使用自定义Modal 转场实现自定义UIAlertView ，UIActionSheet
 
 1.将HQPresentViewLib文件夹拷贝到工程目录
+
 2.在presentingViewController中创建HQPManager实例属性
+
 3.需要在HQPManager实例的初始化中，设置presentedView的大小，例如：
 - (HQPManager *)manager_alert{
     if (!_manager_alert) {
@@ -13,6 +15,7 @@
     }
     return _manager_alert;
 }
+
 4.弹出方式有三种方式：
 typedef NS_ENUM(NSInteger, HQPresentViewType) {
     HQAlert,
@@ -33,9 +36,11 @@ typedef NS_ENUM(NSInteger, HQPresentViewType) {
     }
     return _manager_custom;
 }
+
 5.设置presentedViewController的转场方式为UIModalPresentationCustom和设置转场代理
     NextController * nextVC = [[NextController alloc] init];
     nextVC.transitioningDelegate = self.manager.transitioningDelegate;
     nextVC.modalPresentationStyle = UIModalPresentationCustom;
     [self presentViewController:nextVC animated:YES completion:nil];
+    
 6.如需点击点击背景dismiss presentedViewController，presentedViewController需要遵循HQPresentedViewDelegate
