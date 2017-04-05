@@ -6,7 +6,8 @@
 ### 使用方法
 1.将HQPresentViewLib文件夹拷贝到工程目录<br>
 2.在presentingViewController中创建HQPManager实例属性<br>
-3.需要在HQPManager实例的初始化中，设置presentedView的大小，例如：<br>
+3.需要在HQPManager实例的初始化中，设置presentedView的大小，例如：
+```
 - (HQPManager *)manager_alert{
     if (!_manager_alert) {
         _manager_alert = [HQPManager managerWithType:HQAlert presentedViewHeight:^CGFloat{
@@ -17,6 +18,7 @@
     }
     return _manager_alert;
 }
+```
 
 4.弹出方式有三种方式：<br>
 typedef NS_ENUM(NSInteger, HQPresentViewType) {
