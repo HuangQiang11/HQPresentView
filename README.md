@@ -1,4 +1,10 @@
-使用自定义Modal 转场实现自定义UIAlertView ，UIActionSheet
+# HQPresentView
+自定义转场实现自定义UIAlertView ，UIActionSheet，动画可自定义<br>
+效果如下：<br>
+![iamge](https://github.com/HuangQiang11/HQPresentView/blob/master/Images/BoInrvKBeW.gif)
+
+
+
 
 1.将HQPresentViewLib文件夹拷贝到工程目录
 
