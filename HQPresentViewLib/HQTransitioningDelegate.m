@@ -11,9 +11,11 @@
 #import "HQAnimationManager.h"
 @implementation HQTransitioningDelegate
 + (HQTransitioningDelegate *)transitioningDelegateWith:(HQPManager *)manager{
-    HQTransitioningDelegate * tran = [HQTransitioningDelegate new];
-    tran.manager = manager;
-    return tran;
+    return ({
+        HQTransitioningDelegate * tran = [HQTransitioningDelegate new];
+        tran.manager = manager;
+        tran;
+    });
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{

@@ -14,9 +14,11 @@
 
 @implementation HQPresentationController
 + (HQPresentationController *)presentationControllerWithPmanager:(HQPManager *)manager presentedVC:(UIViewController *)presentedVC presentingVC:(UIViewController *)presentingVC{
-    HQPresentationController * vc = [[HQPresentationController alloc] initWithPresentedViewController:presentedVC presentingViewController:presentingVC];
-    vc.manager = manager;
-    return vc;
+    return ({
+        HQPresentationController * vc = [[HQPresentationController alloc] initWithPresentedViewController:presentedVC presentingViewController:presentingVC];
+        vc.manager = manager;
+        vc;
+    });
 }
 
 - (void)presentationTransitionWillBegin{

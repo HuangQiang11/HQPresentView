@@ -10,21 +10,25 @@
 #import "HQTransitioningDelegate.h"
 @implementation HQPManager
 + (HQPManager *)managerWithType:(HQPresentViewType)type presentedViewHeight:(SizeBlock)presentedViewHeight presentedWidth:(SizeBlock)presentedWidth{
-    HQPManager * manager = [[HQPManager alloc] init];
-    manager.type = type;
-    manager.presentedWidth = presentedWidth;
-    manager.presentedViewHeight = presentedViewHeight;
-    return manager;
+    return ({
+        HQPManager * manager = [[HQPManager alloc] init];
+        manager.type = type;
+        manager.presentedWidth = presentedWidth;
+        manager.presentedViewHeight = presentedViewHeight;
+        manager;
+    });
 }
 
 + (HQPManager *)managerWithCustomTypeAndPresentedViewHeight:(SizeBlock)presentedViewHeight presentedWidth:(SizeBlock)presentedWidth presentedAnimation:(nonnull AnimationBlock)presentedAnimation dismissedAnimation:(nonnull AnimationBlock)dismissedAnimation{
-    HQPManager * manager = [[HQPManager alloc] init];
-    manager.type = HQCustom;
-    manager.presentedWidth = presentedWidth;
-    manager.presentedViewHeight = presentedViewHeight;
-    manager.presentedAnimation = presentedAnimation;
-    manager.dismissedAnimation = dismissedAnimation;
-    return manager;
+    return ({
+        HQPManager * manager = [[HQPManager alloc] init];
+        manager.type = HQCustom;
+        manager.presentedWidth = presentedWidth;
+        manager.presentedViewHeight = presentedViewHeight;
+        manager.presentedAnimation = presentedAnimation;
+        manager.dismissedAnimation = dismissedAnimation;
+        manager;
+    });
 }
 
 - (HQTransitioningDelegate *)transitioningDelegate{

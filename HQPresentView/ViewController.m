@@ -26,17 +26,11 @@
 #pragma mark all click
 
 - (IBAction)buttonClick:(id)sender {
-    NextController * nextVC = [[NextController alloc] init];
-    nextVC.transitioningDelegate = self.manager.transitioningDelegate;
-    nextVC.modalPresentationStyle = UIModalPresentationCustom;
-    [self presentViewController:nextVC animated:YES completion:nil];
+    [self presentViewController:[self nextVCWithDelegate:self.manager.transitioningDelegate] animated:YES completion:nil];
 }
 
 - (IBAction)alertButtonClick:(id)sender {
-    NextController * nextVC = [[NextController alloc] init];
-    nextVC.transitioningDelegate = self.manager_alert.transitioningDelegate;
-    nextVC.modalPresentationStyle = UIModalPresentationCustom;
-    [self presentViewController:nextVC animated:YES completion:nil];
+    [self presentViewController:[self nextVCWithDelegate:self.manager_alert.transitioningDelegate] animated:YES completion:nil];
 }
 
 - (IBAction)alert_XIBBtnClick:(id)sender {
@@ -44,10 +38,16 @@
 }
 
 - (IBAction)customBtnClick:(id)sender {
+    [self presentViewController:[self nextVCWithDelegate:self.manager_custom.transitioningDelegate] animated:YES completion:nil];
+}
+
+- (NextController *)nextVCWithDelegate:(id <UIViewControllerTransitioningDelegate>) transitioningDelegate{
+    return ({
     NextController * nextVC = [[NextController alloc] init];
-    nextVC.transitioningDelegate = self.manager_custom.transitioningDelegate;
+    nextVC.transitioningDelegate = transitioningDelegate;
     nextVC.modalPresentationStyle = UIModalPresentationCustom;
-    [self presentViewController:nextVC animated:YES completion:nil];
+    nextVC;
+    });
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
